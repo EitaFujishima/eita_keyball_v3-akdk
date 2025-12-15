@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: eita_keyball_v3
+name: eita_keyball_v3
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - eita_keyball_v3_left
+  - eita_keyball_v3_right

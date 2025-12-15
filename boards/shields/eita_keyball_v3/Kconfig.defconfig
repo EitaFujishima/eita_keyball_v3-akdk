@@ -1,0 +1,14 @@
+
+if SHIELD_EITA_KEYBALL_V3_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "eita_keyball_v3"
+
+endif
+
+if SHIELD_EITA_KEYBALL_V3_LEFT || SHIELD_EITA_KEYBALL_V3_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
