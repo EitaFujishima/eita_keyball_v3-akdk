@@ -1,4 +1,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#include <input/processors.dtsi>
+
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 5 250>;
+};
+
 #include "../../../config/keymap.keymap"
