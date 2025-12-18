@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <scroll-snap.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 #include "layouts.dtsi"
 
 / {
@@ -53,7 +55,7 @@
 
 	    scroller {
             layers = <1>;
-            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 128>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_snap>, <&pointer_accel>, <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_scroll_scaler 1 128>;
             process-next;
         };
     };
