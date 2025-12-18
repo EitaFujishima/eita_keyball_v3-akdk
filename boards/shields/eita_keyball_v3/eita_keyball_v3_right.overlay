@@ -9,9 +9,13 @@
     require-prior-idle-ms = <300>;
 
     excluded-positions = <
-        18 // J
-        19 // K
-        20 // L
+        28 // LEFT_SHIFT
+        37 // J
+        38 // K
+        39 // L
+        42 // LEFT_SHIFT
+        46 // LEFT_SHIFT
+        47 // LCLK
     >;
 };
 
