@@ -2,6 +2,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/zmk/input_transform.h>
+#include <dt-bindings/input/input-event-codes.h>
 #include <scroll-snap.dtsi>
 #include <behaviors/input_gestures_accel.dtsi>
 #include "layouts.dtsi"
@@ -103,6 +104,7 @@
 };
 
 &pointer_accel {
+    input-type = <INPUT_EV_REL>;
     min-factor = <800>;
     max-factor = <2500>;
     speed-threshold = <1000>;
