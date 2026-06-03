@@ -12,21 +12,21 @@
         layer_0 {
             bindings = <
 &kp ESCAPE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                &kp NUMBER_6                    &kp INT3              &kp N7                 &kp N8  &kp N9     &kp N0      &kp MINUS            &kp EQUAL
-&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                 &kp RIGHT_BRACKET               &kp BACKSLASH         &kp Y                  &kp U   &kp I      &kp O       &kp P                &kp LEFT_BRACKET
+&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T                 &kp RIGHT_BRACKET               &kp BACKSLASH         &kp Y                  &kp U   &lt 4 I    &kp O       &kp P                &kp LEFT_BRACKET
 &kp LEFT_CONTROL  &kp A         &kp S         &kp D         &kp F         &kp G                 &kp LC(PAGE_UP)                 &kp LC(HOME)          &kp H                  &kp J   &kp K      &kp L       &kp SEMICOLON        &kp SQT
 &kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B                 &kp LC(PAGE_DOWN)               &kp LC(END)           &kp N                  &kp M   &kp COMMA  &kp PERIOD  &kp SLASH            &kp INT1
-&kp GRAVE         &kp LEFT_GUI                &kp LEFT_ALT  &mo 1         &mt LEFT_SHIFT SPACE  &mo 2                           &lt 1 BACKSPACE       &mt RIGHT_SHIFT ENTER                                 &mo 4                &mo 3
+&kp GRAVE         &kp LEFT_GUI                &kp LEFT_ALT  &mo 1         &mt LEFT_SHIFT SPACE  &mo 2                           &lt 1 BACKSPACE       &mt RIGHT_SHIFT ENTER                                 &kp LA(PRINTSCREEN)  &mo 3
             >;
         };
 
         /* MOD */
         layer_1 {
             bindings = <
-&kp ESCAPE      &kp F1  &kp F2    &kp F3        &kp F4     &kp F5  &kp F6           &none  &kp F7  &kp F8      &kp F9           &kp F10        &kp F11        &kp F12
-&trans          &none   &none     &kp UP_ARROW  &none      &none   &none            &none  &none   &none       &kp PRINTSCREEN  &none          &none          &none
-&trans          &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none   &none            &none  &none   &none       &kp HOME         &kp PAGE_UP    &kp BACKSPACE  &none
-&trans          &none   &none     &none         &none      &none   &none            &none  &none   &kp DELETE  &kp END          &kp PAGE_DOWN  &none          &none
-&trans          &trans            &trans        &trans     &trans  &trans           &trans &trans                                              &trans         &trans
+&kp ESCAPE  &kp F1  &kp F2        &kp F3        &kp F4         &kp F5        &kp F6           &none  &kp F7  &kp F8      &kp F9           &kp F10        &kp F11        &kp F12
+&trans      &none   &none         &kp UP_ARROW  &none          &kp LG(UP)    &none            &none  &none   &none       &kp PRINTSCREEN  &none          &none          &none
+&trans      &none   &kp LEFT      &kp DOWN      &kp RIGHT      &none         &none            &none  &none   &none       &kp HOME         &kp PAGE_UP    &kp BACKSPACE  &none
+&trans      &none   &kp LG(LEFT)  &none         &kp LG(RIGHT)  &kp LG(DOWN)  &none            &none  &none   &kp DELETE  &kp END          &kp PAGE_DOWN  &none          &none
+&trans      &trans                &trans        &trans         &trans        &trans           &trans &trans                                              &trans         &trans
             >;
         };
 
